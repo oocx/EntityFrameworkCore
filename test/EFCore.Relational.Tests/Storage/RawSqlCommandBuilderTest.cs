@@ -30,8 +30,7 @@ namespace Microsoft.EntityFrameworkCore.Storage
                     new RelationalCommandBuilderDependencies(
                         new TestRelationalTypeMappingSource(
                             TestServiceFactory.Instance.Create<TypeMappingSourceDependencies>(),
-                            TestServiceFactory.Instance.Create<RelationalTypeMappingSourceDependencies>()),
-                        logger)),
+                            TestServiceFactory.Instance.Create<RelationalTypeMappingSourceDependencies>()))),
                 new RelationalSqlGenerationHelper(
                     new RelationalSqlGenerationHelperDependencies()),
                 new ParameterNameGeneratorFactory(
